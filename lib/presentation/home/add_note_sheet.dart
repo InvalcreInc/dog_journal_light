@@ -81,13 +81,6 @@ class __AddNoteViewState extends State<_AddNoteView> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(
-              'Пожалуйста, заполните все поля',
-              textAlign: TextAlign.center,
-              style: TextStyle(),
-            ),
-            const SizedBox(height: 20),
-
             FormBuilder(
               key: _formKey,
               child: Column(
@@ -123,6 +116,12 @@ class __AddNoteViewState extends State<_AddNoteView> {
               ),
             ),
             const SizedBox(height: 20.0),
+            Text(
+              'Пожалуйста, заполните все поля',
+              textAlign: TextAlign.center,
+              style: TextStyle(),
+            ),
+            const SizedBox(height: 20),
             _textFormField(
               labelText: 'Введите название',
               controller: _textTitleController,
