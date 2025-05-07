@@ -1,16 +1,26 @@
-# dog_journal_light
+# Тестовое задание: Dog Journal (лайт)
 
-A new Flutter project.
+Создайте простое Flutter-приложение, в котором можно:
 
-## Getting Started
+## Функциональные требования
 
-This project is a starting point for a Flutter application.
+1. **Добавлять заметку:**
 
-A few resources to get you started if this is your first Flutter project:
+   - Заголовок (текст)
+   - Комментарий (текст)
+   - Фото из галереи
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Сохранять записи локально** (например, через Hive или SharedPreferences)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. **Отображать список всех записей** (с заголовком и превью фото)
+
+## Требования
+
+- Простой, но аккуратный интерфейс
+- Структурированный, понятный код (архитектура на ваш выбор, BLoC приветствуется)
+- Можно без дизайна — важна функциональность
+- Результат — GitHub или архив
+
+```bash
+flutter pub run build_runner build --delete-conflicting-outputs
+```
